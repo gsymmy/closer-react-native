@@ -1,1 +1,1 @@
-# flixcart-react-native
+# closer-react-native
