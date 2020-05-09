@@ -20,7 +20,7 @@ import {Ionicons} from '@expo/vector-icons';
 import FooterTab from '../components/FooterTab'
 import colors from '../assets/colors';
 
-export default class Home extends React.Component {
+export default class DB extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -88,7 +88,8 @@ export default class Home extends React.Component {
       <View style={{flex:0}}>
       <View style={{backgroundColor: colors.appSecondary, marginTop:10, marginRight: 10, marginLeft: 10, padding:10, borderRadius: 10 }}>
       <View>
-      <Text style={styles.openText}>Hello, George P. Burdell</Text>
+      <Text style={styles.openText}>Dooley Burdell</Text>
+      <Text style={{fontFamily: 'Avenir', color: colors.appText}}>Grandpa | Age: 79</Text>
       </View>
       </View>
       <View style={{alignItems: 'center'}}>
@@ -99,7 +100,7 @@ export default class Home extends React.Component {
         labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
         datasets: [
           {
-            data: [7,8,8,9,7,8,5],
+            data: [4,3,4,5,3,3,3.5],
                 },
               ],
             }}
@@ -132,7 +133,7 @@ export default class Home extends React.Component {
           <Text style={styles.openTextBioSoc}>Biological Health</Text>
           </View>
           <View style={{flex:1, justifyContent: 'center', alignItems: 'center'}}>
-            <Ionicons name='ios-radio-button-on' style={{fontSize: 25, color: '#66ff00'}} />
+            <Ionicons name='ios-radio-button-on' style={{fontSize: 25, color: '#ffff00'}} />
           </View>
           </View>
           <View style={{backgroundColor: colors.appSecondary, marginTop:10, marginRight: 10, marginLeft: 10, padding:10, borderRadius: 10, flexDirection:'row' }}>
@@ -143,62 +144,23 @@ export default class Home extends React.Component {
             <Ionicons name='ios-radio-button-on' style={{fontSize: 25, color: '#ffff00'}} />
           </View>
           </View>
-          <View style={{flex:1, flexDirection: 'row', marginTop: 15}}>
-          <View style={{flex: 1, paddingRight: 10, paddingLeft: 10, height: 80}}>
-            <View style={{flex:1, backgroundColor: colors.appSecondary, borderRadius:10, padding: 5}}>
-              <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}><Text style={styles.markerHead}>Steps</Text></View>
-              <View style={{flex: 2, justifyContent: 'center', alignItems: 'center'}}><Text style={styles.markerCont}>535</Text></View>
-            </View>
-          </View>
-          <View style={{flex: 1, paddingRight: 10, height: 80}}>
-          <View style={{flex:1, backgroundColor: colors.appSecondary, borderRadius:10, padding: 5}}>
-              <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}><Text style={styles.markerHead}>Screentime</Text></View>
-              <View style={{flex: 2, justifyContent: 'center', alignItems: 'center'}}><Text style={styles.markerCont}>2:15</Text></View>
-            </View>
-          </View>
-          <View style={{flex: 1, paddingRight: 10, height: 80}}>
-          <View style={{flex:1, backgroundColor: colors.appSecondary, borderRadius:10, padding: 5}}>
-              <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}><Text style={styles.markerHead}>Weight</Text></View>
-              <View style={{flex: 2, justifyContent: 'center', alignItems: 'center'}}><Text style={styles.markerCont}>180</Text></View>
-            </View>
-          </View>
-          <View style={{flex: 1, paddingRight: 10, height: 80}}>
-          <View style={{flex:1, backgroundColor: colors.appSecondary, borderRadius:10, padding: 5}}>
-              <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}><Text style={styles.markerHead}>Meditation</Text></View>
-              <View style={{flex: 2, justifyContent: 'center', alignItems: 'center'}}><Text style={styles.markerCont}>35m</Text></View>
-            </View>
-          </View>
-          </View>
-          <View style={{flex:1, flexDirection: 'row'}}>
-          <View style={{flex: 1, paddingRight: 10, paddingLeft: 10, height: 80}}>
-          <View style={{flex:1, backgroundColor: colors.appSecondary, borderRadius:10, padding: 5}}>
-              <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}><Text style={styles.markerHead}>Sleep Time</Text></View>
-              <View style={{flex: 2, justifyContent: 'center', alignItems: 'center'}}><Text style={styles.markerCont}>6:30</Text></View>
-            </View>
-          </View>
-          <View style={{flex: 1, paddingRight: 10, height: 80}}>
-          <View style={{flex:1, backgroundColor: colors.appSecondary, borderRadius:10, padding: 5}}>
-              <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}><Text style={styles.markerHead}>Flights</Text></View>
-              <View style={{flex: 2, justifyContent: 'center', alignItems: 'center'}}><Text style={styles.markerCont}>13</Text></View>
-            </View>
-          </View>
-          <View style={{flex: 1, paddingRight: 10, height: 80}}>
-          <View style={{flex:1, backgroundColor: colors.appSecondary, borderRadius:10, padding: 5}}>
-              <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}><Text style={styles.markerHead}>Fridge</Text></View>
-              <View style={{flex: 2, justifyContent: 'center', alignItems: 'center'}}><Text style={styles.markerCont}>8</Text></View>
-            </View>
-          </View>
-          <View style={{flex: 1, paddingRight: 10, height: 80}}>
-          <View style={{flex:1, backgroundColor: colors.appSecondary, borderRadius:10, padding: 5}}>
-              <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}><Text style={styles.markerHead}>Switches</Text></View>
-              <View style={{flex: 2, justifyContent: 'center', alignItems: 'center'}}><Text style={styles.markerCont}>20</Text></View>
-            </View>
-          </View>
+          <View style={{flex: 1, padding: 10}}>
+              <View style={{flex:1, backgroundColor: colors.appSecondary, borderRadius: 10, padding: 10}}>
+                  <View style={{flex: 1}}>
+                      <Text style={[styles.openTextBioSoc, {fontFamily: 'Avenir-Black'}]}>Recent Activity</Text>
+                  </View>
+                  <View style={{flex:3}}>
+                      <Text style={styles.recentAct}>• 05/09/2020 4:35 PM : Dad called Grandpa</Text>
+                      <Text style={styles.recentAct}>• 05/09/2020 9:00 AM : Alexa Interaction</Text>
+                      <Text style={styles.recentAct}>• 05/08/2020 8:15 PM : Sister called Grandpa</Text>
+                      <Text style={styles.recentAct}>• 05/08/2020 9:00 AM : Alexa Interaction</Text>
+                  </View>
+              </View>
           </View>
       </View>
       </View>
       <View style={styles.footer}>
-        <FooterTab title='You' count={this.state.plannedCount}>
+        <FooterTab title='You' count={this.state.plannedCount} onPress={() => this.props.navigation.navigate('Home')}>
         <Ionicons name='ios-contact' style={{fontSize: 35, color: colors.appText}}/>
         </FooterTab>
         <FooterTab title='Family' count={this.state.watchingCount} onPress={() => this.props.navigation.navigate('Family')}>
@@ -217,6 +179,12 @@ export default class Home extends React.Component {
 const styles = StyleSheet.create({
   appBody: {
     flex: 1,
+  },
+  recentAct: {
+      marginLeft: 20,
+      fontSize: 16,
+      fontFamily: 'Avenir',
+      color: colors.appText
   },
   emptyListStyle: {
     justifyContent: 'center',

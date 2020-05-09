@@ -3,8 +3,8 @@ import {StyleSheet, View, Text, TouchableOpacity} from 'react-native';
 import PropTypes from 'prop-types';
 import colors from '../assets/colors';
 
-const FooterTab = ({children, title, count}) => (
-    <TouchableOpacity style={styles.touch}>
+const FooterTab = ({children, onPress, title, count}) => (
+    <TouchableOpacity onPress={onPress} style={styles.touch}>
         <View style={styles.footerTabs}>
             <Text style={styles.tabText}>{title}</Text>
             <View style={{flex:1, paddingTop:0}}>
