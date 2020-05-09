@@ -1,2 +1,1 @@
-# setup
-react-native-app setup
+# flixcart-react-native

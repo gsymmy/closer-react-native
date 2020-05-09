@@ -1,15 +1,18 @@
 import React from 'react';
-import {StyleSheet, View, Text} from 'react-native';
+import {StyleSheet, View, Text, TouchableOpacity} from 'react-native';
+import PropTypes from 'prop-types';
+import colors from '../assets/colors';
 
-export default class FooterTab extends React.Component {
-    render() {
-        return (
+const FooterTab = ({children, title, count}) => (
+    <TouchableOpacity style={styles.touch}>
         <View style={styles.footerTabs}>
-            <Text style={styles.tabText}>{this.props.title}</Text>
+            <Text style={styles.tabText}>{title}</Text>
+            <View style={{flex:1, paddingTop:0}}>
+                {children}
+            </View>
         </View>
+        </TouchableOpacity>
         );
-    }
-}
 
 const styles = StyleSheet.create({
     footerTabs: {
@@ -19,11 +22,23 @@ const styles = StyleSheet.create({
     },
     tabText: {
         fontSize: 20,
-        color: '#5E6472',
-        fontFamily: 'Avenir'
+        color: colors.appText,
+        fontFamily: 'Avenir-Black',
+        paddingTop: 5,
+        marginBottom: 0
+    },
+    touch: {
+        flex:1
     }
-
-
-
 });
 
+FooterTab.propTypes = {
+    title: PropTypes.string.isRequired,
+    count: PropTypes.number
+}
+
+FooterTab.defaultProps = {
+    title: 'Default'
+}
+
+export default FooterTab;
