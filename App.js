@@ -14,6 +14,7 @@ import Home from './screens/Home';
 import Family from './screens/Family';
 import DB from './screens/DB';
 import Engage from './screens/Engage';
+import Test from './screens/Test';
 
 const App = () => <AppContainer/>;
 
@@ -22,7 +23,8 @@ const AppSwitchNavigator = createSwitchNavigator({
   Home,
   Family,
   DB,
-  Engage
+  Engage,
+  Test
 })
 
 const AppContainer = createAppContainer(AppSwitchNavigator);

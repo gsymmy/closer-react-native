@@ -79,7 +79,6 @@ export default class Family extends React.Component {
             <View style={{flex:7, justifyContent: 'center'}}>
                 <Text style={styles.memberName}>Add to Needs List</Text>
             </View>
-        
             <View style={{flex:1, justifyContent: 'center'}}>
               <TouchableOpacity onPress={this.openNeedAdder}>
               <Ionicons style={{fontSize: 25, color: colors.appText}} name='ios-hand' />
